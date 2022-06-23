@@ -29,12 +29,13 @@
   <script>
     let url = "https://script.google.com/macros/s/AKfycbxRbOtmWnC9l9UKVnGm9kRql9NqCVqV9fwgOmkcoT01GUAc0reQBAwxy7DvjPPfEyTI/exec"
     let form = document.getElementById('formnik')
+    let nik = document.getElementById('inputPassword2')
     formnik.addEventListener('submit', e => {
        e.preventDefault()
-    //fetch(url + `?nik=${e.target}`)
-      //.then(res => {
-      alert(e.target)
-    //})
+    fetch(url + `?nik=${nik.value}`)
+      .then(res => {
+      console.log(res)
+    })
     })
     </script>
   </body>
