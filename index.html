@@ -20,11 +20,21 @@
               <input type="text" class="form-control" id="inputPassword2" placeholder="NIK">
             </div>
             <div class="text-end">
-              <button type="submit" class="btn btn-primary pe-2">Cek</button>
+              <button type="submit" class="btn btn-primary me-2" id="kirim()">Cek</button>
             </div>
       </form>
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script>
+    let url = "https://script.google.com/macros/s/AKfycbxRbOtmWnC9l9UKVnGm9kRql9NqCVqV9fwgOmkcoT01GUAc0reQBAwxy7DvjPPfEyTI/exec"
+    function kirim(e){
+      e.preventDefault()
+    //fetch(url + `?nik=${e.target}`)
+      //.then(res => {
+      alert(e.target)
+    //})
+    }
+    </script>
   </body>
 </html>
