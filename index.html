@@ -34,7 +34,10 @@
        e.preventDefault()
     fetch(url + `?nik=${nik.value}`)
       .then(res => {
-      console.log(res)
+      return res.text()
+    })
+      .then(res2 => {
+    console.log(res2)
     })
     })
     </script>
